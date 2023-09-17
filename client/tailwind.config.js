@@ -8,7 +8,8 @@ module.exports = {
     colors: {
       'dark': '#0C0A0A',
       'light': '#FFFFFF',
-      'accent': '#818181'
+      'accent': '#818181',
+      'lightAccent': '#D9D9D9'
     }
   },
   plugins: [],
