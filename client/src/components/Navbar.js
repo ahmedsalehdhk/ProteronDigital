@@ -4,7 +4,7 @@ import ButtonDark from './ButtonDark';
 export default function Navbar() {
   return (
     <div>
-        <nav className='flex justify-between items-center px-6 py-5 md:px-10 md:py-5 border-b border-lightAccent absolute w-full bg-light'>
+        <nav className='flex justify-between items-center px-6 py-5 md:px-10 md:py-5 border-b border-lightAccent fixed top-0 left-0 w-full bg-light'>
             <div className="logo">logo</div>
             <ul className="nav-links hidden md:flex gap-5">
                 <li className='capitalize hover:font-medium cursor-pointer'>home</li>
