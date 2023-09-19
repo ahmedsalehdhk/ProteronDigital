@@ -4,3 +4,20 @@
     min-height: 300px; 
 }
 
+#about-large-card{
+    background-image: url("./assets/svg/placeholder.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#about-small-card-1{
+    background-image: url("./assets/svg/placeholder.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#about-small-card-2{
+    background-image: url("./assets/svg/placeholder.svg");
+    background-size: cover;
+    background-position: center;
+}
