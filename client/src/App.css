@@ -5,19 +5,25 @@
 }
 
 #about-large-card{
-    background-image: url("./assets/svg/placeholder.svg");
+    background-image: url("https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
     background-position: center;
 }
 
 #about-small-card-1{
-    background-image: url("./assets/svg/placeholder.svg");
+    background-image: url("https://images.pexels.com/photos/924676/pexels-photo-924676.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
     background-position: center;
 }
 
 #about-small-card-2{
-    background-image: url("./assets/svg/placeholder.svg");
+    background-image: url("https://images.pexels.com/photos/3277806/pexels-photo-3277806.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
+    background-position: center;
+}
+
+.card-image{
+    background-image: url("./assets/svg/placeholder.svg");
+    background-size: contain;
     background-position: center;
 }
