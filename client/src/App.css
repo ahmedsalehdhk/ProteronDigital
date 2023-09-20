@@ -27,3 +27,9 @@
     background-size: contain;
     background-position: center;
 }
+
+.case-study-card {
+    background-image: url("https://images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+    background-size: cover;
+}
