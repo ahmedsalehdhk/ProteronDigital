@@ -1,15 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Card from '../components/Card'
 import ButtonDark from "../components/ButtonDark";
 
-const handleLinkClick = (id) => {
-  const element = document.getElementById(id)
-  element && element.scrollIntoView({behavior: 'smooth'})
-}
 
 export default function Home() {
+
+  const location = useLocation();
+
+  const handleSroll = (id) => {
+   if(location.pathname === '/'){
+      const element = document.getElementById(id)
+      element.scrollIntoView({behavior: 'smooth'})
+   }
+  };
+
   return (
     <div className="home-page">
       <div className="home min-h-screen pb-8 flex flex-col gap-10 pt-32" id="home">
@@ -22,7 +28,7 @@ export default function Home() {
             <p className="mb-3 text-accent">
               Scale your business with our digital offerings. From dynamic websites to bespoke software solutions tailored to your needs, we fuel your growth strategy in the digital age.
             </p>
-            <Link onClick={() => handleLinkClick('services')}>
+            <Link onClick={() => handleSroll('services')}>
               <ButtonDark text="get started" />
             </Link>
           </div>
