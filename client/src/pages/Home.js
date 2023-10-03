@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import Card from '../components/Card'
 import ButtonDark from "../components/ButtonDark";
 
-
 export default function Home() {
 
   const location = useLocation();
@@ -33,7 +32,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="home-carousal bg-dark grow text-light flex justify-center items-center">CAROUSAL GOES HERE</div>
+        {/* SLIDER IS HERE */}
+        <div className="home-carousal bg-accent h-[0] grow text-light flex gap-5 overflow-x-scroll">YADA</div>
       </div>
       {/* ABOUT SECTION */}
       <div className="about px-6 md:px-8 xl:px-48 py-32" id="about">
@@ -77,22 +77,22 @@ export default function Home() {
           <p className="text-accent mb-10">Explore our services: captivating websites, tailor-made software, and more. Elevate your business with our digital expertise.</p>
         </div>
         <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
-          <Card id="first" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" />
-          <Card id="first" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />
-          <Card id="first" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" />
-          <Card id="first" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" />
-          <Card id="first" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" />
-          <Card id="first" title="Database Management" description="Creating and managing databases to store and organize data efficiently" />
-          <Card id="first" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" />
-          <Card id="first" title="API Development" description="Creating APIs to enable interactions between software components" />
-          <Card id="first" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
+          <Link to="/customsoftware"><Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" /></Link>
+          <Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />
+          <Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" />
+          <Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" />
+          <Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" />
+          <Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" />
+          <Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" />
+          <Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" />
+          <Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
         </div>
       </div>
       {/* CASE STUDY */}
       <div className="case-study px-6 md:px-8 lg:px-32 pt-32 pb-16" id="case-study">
         <div className="case-study-text flex flex-col md:flex-row mb-10">
           <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">case study</h2>
-          <p className="text-accent mb-10 md:w-1/2">
+          <p className="text-accent md:mb-5 md:w-1/2">
             Dive into our success stories, where digital transformations turn challenges into triumphs. From global brands to streamlined software, witness innovation and impact firsthand
           </p>
         </div>
@@ -110,8 +110,8 @@ export default function Home() {
       {/* CONTACT */}
       <div className="contact px-6 md:px-8 xl:px-48 pt-32 pb-16" id="contact">
         <div className="contact-text flex flex-col md:flex-row mb-10">
-          <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">Love to hear from you, Get in touch 👋</h2>
-          <p className="text-accent mb-10 md:w-1/2">Whether it be an inquiry or a something something, we would love for you to get in touch with us. info@proterondigital.com</p>
+          <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">Love to hear from you,<br/> Get in touch 👋</h2>
+          <p className="text-accent md:mb-10 md:w-1/2">Whether it be an inquiry or a something something, we would love for you to get in touch with us. info@proterondigital.com</p>
         </div>
         <div className="contact-form bg-dark text-light flex justify-center items-center h-96">
           <h1>FORM GOES HERE</h1>

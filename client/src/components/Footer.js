@@ -1,13 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const handleLinkClick = (id) => {
-  const element = document.getElementById(id)
-  element && element.scrollIntoView({behavior: 'smooth'})
-}
-
+import { Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
+
+  const location = useLocation();
+
+  const handleSroll = (id) => {
+   if(location.pathname === '/'){
+      const element = document.getElementById(id)
+      element.scrollIntoView({behavior: 'smooth'})
+   }
+  };
+
+  const redirectURL = (url) => {
+    window.location.href = {url}
+  }
+
   return (
     <div className="footer px-6 md:px-8 lg:px-32 pt-24 pb-8 bg-dark text-light">
       <div className="footer-upper flex flex-col md:flex-row mb-10">
@@ -17,16 +25,16 @@ export default function Footer() {
         </div>
         <div className="col-2 md:w-1/5 mb-3">
           <h3>Company</h3>
-          <p className="capitalize text-accent"><Link onClick={() => handleLinkClick('about')}>about</Link></p>
-          <p className="capitalize text-accent"><Link>career</Link></p>
-          <p className="capitalize text-accent"><Link onClick={() => handleLinkClick('case-study')}>case studies</Link></p>
+          <p className="capitalize text-accent"><Link to='/' onClick={() => handleSroll('about')}>about</Link></p>
+          <p className="capitalize text-accent"><Link to='/career'>career</Link></p>
+          <p className="capitalize text-accent"><Link to='/'  onClick={() => handleSroll('case-study')}>case studies</Link></p>
         </div>
         <div className="col-3 md:w-1/5">
           <h3>Social</h3>
-          <p className="capitalize text-accent"><Link>facebook</Link></p>
+          <p className="capitalize text-accent"><Link onClick={() => redirectURL('www.facebook.com')}>facebook</Link></p>
           <p className="capitalize text-accent"><Link>instagram</Link></p>
           <p className="capitalize text-accent"><Link>linkedIn</Link></p>
-          <p className="capitalize text-accent"><Link></Link>behance</p>
+          <p className="capitalize text-accent"><Link>behance</Link></p>
         </div>
       </div>
       <hr className="border-accent"/>

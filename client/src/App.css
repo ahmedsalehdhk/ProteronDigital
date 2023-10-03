@@ -22,11 +22,81 @@
     background-position: center;
 }
 
-.card-image{
-    background-image: url("./assets/svg/placeholder.svg");
-    background-size: contain;
-    background-position: center;
-}
+/* SERVICES */
+
+ #CSD{
+    background-image: url('./assets/service-card-images/custom-software-development.jpg');
+    background-size: cover;
+ }
+ #CSD:hover{
+    scale: 1.1;
+ }
+
+ #WAD{
+    background-image: url('./assets/service-card-images/web-app-development.jpeg');
+    background-size: cover;
+ }
+ #WAD:hover{
+    scale: 1.1;
+ }
+
+ #MAD{
+    background-image: url('./assets/service-card-images/mobile-app-development.jpg');
+    background-size: cover;
+ }
+ #MAD:hover{
+    scale: 1.1;
+ }
+
+ #ECS{
+    background-image: url('./assets/service-card-images/ecommerce-solutions.jpg');
+    background-size: cover;
+ }
+ #ECS:hover{
+    scale: 1.1;
+ }
+
+ #UIX{
+    background-image: url('./assets/service-card-images/ui-ux-design.jpg');
+    background-size: cover;
+ }
+ #UIX:hover{
+    scale: 1.1;
+ }
+
+ #DM{
+    background-image: url('./assets/service-card-images/database-management.jpg');
+    background-size: cover;
+ }
+ #DM:hover{
+    scale: 1.1;
+ }
+
+ #BS{
+    background-image: url('./assets/service-card-images/blockchain-solutions.jpg');
+    background-size: cover;
+ }
+ #BS:hover{
+    scale: 1.1;
+ }
+
+ #APID{
+    background-image: url('./assets/service-card-images/api-development.jpg');
+    background-size: cover;
+ }
+ #APID:hover{
+    scale: 1.1;
+ }
+
+ #DABI{
+    background-image: url('./assets/service-card-images/data-analytics.jpg');
+    background-size: cover;
+ }
+ #DABI:hover{
+    scale: 1.1;
+ }
+
+/* CASE STUDY */
 
 .case-study-card {
     background-image: url("https://images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg?auto=compress&cs=tinysrgb&w=1600");
