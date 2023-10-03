@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card(props) {
   return (
-    <div className="cards bg-light text-dark w-64">
+    <div className="cards bg-light text-dark w-64 h-full">
       <div className="image-container overflow-hidden">
         <div className="card-image bg-lightAccent h-64 w-64 transition-all" id={props.id}></div>
       </div>

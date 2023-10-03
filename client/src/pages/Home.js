@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
         {/* SLIDER IS HERE */}
-        <div className="home-carousal bg-accent h-[0] grow text-light flex gap-5 overflow-x-scroll">YADA</div>
+        <div className="home-carousal bg-accent h-[0] grow text-light flex gap-5">YADA</div>
       </div>
       {/* ABOUT SECTION */}
       <div className="about px-6 md:px-8 xl:px-48 py-32" id="about">
@@ -78,14 +78,14 @@ export default function Home() {
         </div>
         <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
           <Link to="/customsoftware"><Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" /></Link>
-          <Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />
-          <Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" />
-          <Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" />
-          <Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" />
-          <Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" />
-          <Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" />
-          <Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" />
-          <Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
+          <Link to={'/webapplication'}><Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" /></Link>
+          <Link to={'/mobileapplication'}><Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" /></Link>
+          <Link to={'/ecommercesolution'}><Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" /></Link>
+          <Link to={'/uiux'}><Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" /></Link>
+          <Link to={'/databasemanagement'}><Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" /></Link>
+          <Link to={'/blockchainsolution'}><Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" /></Link>
+          <Link to={'/APIdevelopment'}><Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" /></Link>
+          <Link to={'/dataanalytics'}><Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" /></Link>
         </div>
       </div>
       {/* CASE STUDY */}
