@@ -1,9 +1,27 @@
 
-
+/* HOME */
 .home-carousal {
     min-height: 300px; 
 }
 
+.slide-1{
+   background-image: url('./assets/home-slider-images/slider-image-1.png');
+   background-size: cover;
+   background-position: center;
+}
+.slide-2{
+   background-image: url('./assets/home-slider-images/slider-image-1.png');
+   background-size: cover;
+   background-position: center;
+}
+.slide-3{
+   background-image: url('./assets/home-slider-images/slider-image-1.png');
+   background-size: cover;
+   background-position: center;
+}
+
+
+/* ABOUT */
 #about-large-card{
     background-image: url("https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-size: cover;
