@@ -4,8 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import Card from '../components/Card'
 import ButtonDark from "../components/ButtonDark";
 
-import img1 from '../assets/home-slider-images/slider-image-1.png'
-
 export default function Home() {
 
   const location = useLocation();
@@ -16,6 +14,22 @@ export default function Home() {
       element.scrollIntoView({behavior: 'smooth'})
    }
   };
+
+  //carousal buttons functionality
+  const carouselImages = document.querySelector('#carousal-body')
+  
+  const handleLeftClick = () => {
+    if(carouselImages){
+      carouselImages.classList.remove('swipe-to-right')
+      carouselImages.classList.add('swipe-to-left')
+    }
+  }
+  const handleRightClick = () => {
+    if(carouselImages) {
+      carouselImages.classList.remove('swipe-to-left')
+      carouselImages.classList.add('swipe-to-right')
+    }
+  }
 
   return (
     <div className="home-page">
@@ -34,21 +48,21 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* SLIDER IS HERE */}
-        <div className="home-carousal h-[0] grow text-light relative overflow-scroll">
-          <div className="carousal-images h-full w-full relative">
-            <div className="slide-1 bg-accent h-full w-full lg:w-[48%] absolute flex justify-start items-end p-10">
-              <p>Our custom software solutions are engineered to streamline your business operations, and give you the competitive edge to drive your business forward.</p>
+        {/* HOME SLIDER */}
+        <div className="home-carousal h-[0] grow text-light relative overflow-hidden">
+          <div className="carousal-images h-full w-full duration-700" id="carousal-body">
+            <div className="slide-1 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10">
+              <p className="lg:w-3/5">Our custom software solutions are engineered to streamline your business operations, give you the competitive edge to drive your business forward.</p>
             </div>
-            <div className="slide-2 bg-accent h-full w-full lg:w-[48%] absolute flex justify-start items-end p-10 left-[100%] lg:left-[50%] ">
-              <p>Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
+            <div className="slide-2 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10 left-[100%] lg:left-[50%] ">
+              <p className="lg:w-3/5">Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
             </div>
-            <div className="slide-3 bg-accent h-full w-full lg:w-[48%] absolute flex justify-start items-end p-10 left-[200%] lg:left-[100%]">
-              <p>Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
+            <div className="slide-3 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10 left-[200%] lg:left-[100%]">
+              <p className="lg:w-3/5">Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
             </div>
           </div>
-          <div className="button-previous rounded-full h-20 w-20 bg-light fixed z-[5] top-[65%] left-[35%]"></div>
-          <div className="button-previous rounded-full h-20 w-20 bg-light fixed z-[5] top-[65%] left-[40%]"></div>
+          <div className="button-previous rounded-full h-12 lg:h-20 w-12 lg:w-20 bg-accent absolute z-[5] top-[10%] lg:top-[70%] left-[60%] lg:left-[35%] text-dark cursor-pointer" onClick={handleLeftClick}></div>
+          <div className="button-next rounded-full h-12 lg:h-20 w-12 lg:w-20 bg-lightAccent absolute z-[5] top-[10%] lg:top-[70%] left-[75%] lg:left-[40%] cursor-pointer" onClick={handleRightClick}></div>
         </div>
       </div>
       {/* ABOUT SECTION */}

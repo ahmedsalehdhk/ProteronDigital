@@ -10,16 +10,31 @@
    background-position: center;
 }
 .slide-2{
-   background-image: url('./assets/home-slider-images/slider-image-1.png');
+   background-image: url('./assets/home-slider-images/slider-image-2.jpg');
    background-size: cover;
    background-position: center;
 }
 .slide-3{
-   background-image: url('./assets/home-slider-images/slider-image-1.png');
+   background-image: url('./assets/home-slider-images/slider-image-3.png');
    background-size: cover;
    background-position: center;
 }
-
+.swipe-to-left{
+   translate: 0% 0px;
+}
+.swipe-to-right{
+   translate: -50% 0px;
+}
+.button-previous{
+   background-image: url('./assets/left-arrow.png');
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.button-next{
+   background-image: url('./assets/right-arrow.png');
+   background-position: center;
+   background-repeat: no-repeat;
+}
 
 /* ABOUT */
 #about-large-card{
