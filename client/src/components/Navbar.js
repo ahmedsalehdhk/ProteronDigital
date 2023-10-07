@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center px-6 py-5 md:px-10 md:py-5 border-b border-lightAccent fixed z-10 top-0 left-0 w-full bg-light">
-      <div className="logo">logo</div>
+      <Link to={'/'}><div className="h-12 w-32" id="logo"></div></Link>
       <ul className="nav-links text-accent font-medium hidden md:flex gap-5">
         <li className="capitalize hover:text-dark cursor-pointer">
           <Link to={'/'} onClick={() => handleSroll("home")}>home</Link>

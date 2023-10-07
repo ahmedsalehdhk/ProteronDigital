@@ -1,39 +1,28 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import Card from '../components/Card'
+import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
+import { CarouselTransition } from "../components/CarouselTransition";
 
 export default function Home() {
-
   const location = useLocation();
 
   const handleSroll = (id) => {
-   if(location.pathname === '/'){
-      const element = document.getElementById(id)
-      element.scrollIntoView({behavior: 'smooth'})
-   }
+    if (location.pathname === "/") {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   //carousal buttons functionality
-  const carouselImages = document.querySelector('#carousal-body')
-  
-  const handleLeftClick = () => {
-    if(carouselImages){
-      carouselImages.classList.remove('swipe-to-right')
-      carouselImages.classList.add('swipe-to-left')
-    }
-  }
-  const handleRightClick = () => {
-    if(carouselImages) {
-      carouselImages.classList.remove('swipe-to-left')
-      carouselImages.classList.add('swipe-to-right')
-    }
-  }
+ 
+
 
   return (
     <div className="home-page">
-      <div className="home min-h-screen pb-8 flex flex-col gap-10 pt-32" id="home">
+      {/* HOME */}
+      <div className="home min-h-screen pb-8 flex flex-col gap-10 pt-32 overflow-hidden" id="home">
         <div className="home-text px-6 md:px-8 lg:px-32 flex flex-col lg:flex-row justify-between gap-3 lg:gap-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl capitalize font-medium whitespace-nowrap">
             start your business, <br />
@@ -43,28 +32,17 @@ export default function Home() {
             <p className="mb-3 text-accent">
               Scale your business with our digital offerings. From dynamic websites to bespoke software solutions tailored to your needs, we fuel your growth strategy in the digital age.
             </p>
-            <Link onClick={() => handleSroll('services')}>
+            <Link onClick={() => handleSroll("services")}>
               <ButtonDark text="get started" />
             </Link>
           </div>
         </div>
         {/* HOME SLIDER */}
-        <div className="home-carousal h-[0] grow text-light relative overflow-hidden">
-          <div className="carousal-images h-full w-full duration-700" id="carousal-body">
-            <div className="slide-1 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10">
-              <p className="lg:w-3/5">Our custom software solutions are engineered to streamline your business operations, give you the competitive edge to drive your business forward.</p>
-            </div>
-            <div className="slide-2 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10 left-[100%] lg:left-[50%] ">
-              <p className="lg:w-3/5">Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
-            </div>
-            <div className="slide-3 bg-accent h-full w-[98%] lg:w-[48%] absolute flex justify-start items-end p-10 left-[200%] lg:left-[100%]">
-              <p className="lg:w-3/5">Transforming ideas into exceptional user experiences, our UI/UX designs elevate your digital products to resonate with your audience</p>
-            </div>
-          </div>
-          <div className="button-previous rounded-full h-12 lg:h-20 w-12 lg:w-20 bg-accent absolute z-[5] top-[10%] lg:top-[70%] left-[60%] lg:left-[35%] text-dark cursor-pointer" onClick={handleLeftClick}></div>
-          <div className="button-next rounded-full h-12 lg:h-20 w-12 lg:w-20 bg-lightAccent absolute z-[5] top-[10%] lg:top-[70%] left-[75%] lg:left-[40%] cursor-pointer" onClick={handleRightClick}></div>
+        <div className="home-carousal h-[0] grow">
+          <CarouselTransition/>
         </div>
       </div>
+
       {/* ABOUT SECTION */}
       <div className="about px-6 md:px-8 xl:px-48 py-32" id="about">
         <p className="text-center uppercase text-accent">about us</p>
@@ -100,6 +78,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* SERVICES */}
       <div className="services bg-dark text-light pt-32 pb-32" id="services">
         <div className="services-text px-6 md:px-8 lg:px-32">
@@ -107,17 +86,36 @@ export default function Home() {
           <p className="text-accent mb-10">Explore our services: captivating websites, tailor-made software, and more. Elevate your business with our digital expertise.</p>
         </div>
         <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
-          <Link to="/customsoftware"><Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" /></Link>
-          <Link to={'/webapplication'}><Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" /></Link>
-          <Link to={'/mobileapplication'}><Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" /></Link>
-          <Link to={'/ecommercesolution'}><Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" /></Link>
-          <Link to={'/uiux'}><Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" /></Link>
-          <Link to={'/databasemanagement'}><Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" /></Link>
-          <Link to={'/blockchainsolution'}><Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" /></Link>
-          <Link to={'/APIdevelopment'}><Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" /></Link>
-          <Link to={'/dataanalytics'}><Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" /></Link>
+          <Link to="/customsoftware">
+            <Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" />
+          </Link>
+          <Link to={"/webapplication"}>
+            <Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />
+          </Link>
+          <Link to={"/mobileapplication"}>
+            <Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" />
+          </Link>
+          <Link to={"/ecommercesolution"}>
+            <Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" />
+          </Link>
+          <Link to={"/uiux"}>
+            <Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" />
+          </Link>
+          <Link to={"/databasemanagement"}>
+            <Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" />
+          </Link>
+          <Link to={"/blockchainsolution"}>
+            <Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" />
+          </Link>
+          <Link to={"/APIdevelopment"}>
+            <Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" />
+          </Link>
+          <Link to={"/dataanalytics"}>
+            <Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
+          </Link>
         </div>
       </div>
+
       {/* CASE STUDY */}
       <div className="case-study px-6 md:px-8 lg:px-32 pt-32 pb-16" id="case-study">
         <div className="case-study-text flex flex-col md:flex-row mb-10">
@@ -137,10 +135,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* CONTACT */}
       <div className="contact px-6 md:px-8 xl:px-48 pt-32 pb-16" id="contact">
         <div className="contact-text flex flex-col md:flex-row mb-10">
-          <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">Love to hear from you,<br/> Get in touch 👋</h2>
+          <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">
+            Love to hear from you,
+            <br /> Get in touch 👋
+          </h2>
           <p className="text-accent md:mb-10 md:w-1/2">Whether it be an inquiry or a something something, we would love for you to get in touch with us. info@proterondigital.com</p>
         </div>
         <div className="contact-form bg-dark text-light flex justify-center items-center h-96">
