@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
-import { CarouselTransition } from "../components/CarouselTransition";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   const location = useLocation();
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         {/* HOME SLIDER */}
         <div className="home-carousal h-[0] grow">
-          <CarouselTransition/>
+        <ImageSlider />
         </div>
       </div>
 
