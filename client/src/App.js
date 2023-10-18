@@ -1,13 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+//pages
 import Home from "./pages/Home";
 import Career from "./pages/Career";
 
+//componenets
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Service from "./pages/Service";
-import Test from "./pages/Test";
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/career" element={<Career />}></Route>
-          <Route exact path="/test" element={<Test />}></Route>
           {/* Specific services routes */}
           <Route exact path="/customsoftware" element={<Service title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs"/>}></Route>
           <Route exact path="/webapplication" element={<Service title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />}></Route>
