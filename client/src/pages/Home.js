@@ -4,6 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 //components
 import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
+import ImageSlider from "../components/ImageSlider";
+
+import img1 from '../assets/home-carousal/home-carousal-image-1.png'
+import img2 from '../assets/home-carousal/home-caoursal-image-2.png'
+import img3 from '../assets/home-carousal/home-carousal-image-1.png'
+const images = [
+  img1, img2, img3
+];
 
 export default function Home() {
   const location = useLocation();
@@ -34,7 +42,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="home-carousal h-[0] grow bg-dark"></div>
+        <div className="home-carousal h-[0] grow overflow-hidden bg-light-green-700">
+          <ImageSlider images={images} />
+        </div>
       </div>
 
       {/* ABOUT SECTION */}
