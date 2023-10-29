@@ -162,7 +162,7 @@ export default function Home() {
               <div className="name flex flex-col w-full">
                 <label htmlFor="">Platform</label>
                 <select name="" id="">
-                  <option value="nada" selected disabled>-</option>
+                  <option value="" selected disabled>-</option>
                   <option value="nada">Desktop</option>
                   <option value="nada">Mobile</option>
                   <option value="nada">Both</option>
@@ -171,7 +171,7 @@ export default function Home() {
               <div className="mail flex flex-col w-full">
                 <label htmlFor="">Category</label>
                 <select name="" id="">
-                  <option value="nada" selected disabled>-</option>
+                  <option value="" selected disabled>-</option>
                   <option value="nada">Custom Software Development</option>
                   <option value="nada">Web Application Development</option>
                   <option value="nada">Mobile App Development</option>

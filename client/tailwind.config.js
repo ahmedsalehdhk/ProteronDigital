@@ -13,7 +13,7 @@ module.exports = withMT({
       'light': '#FFFFFF',
       'hoverLight': '#EFEFEF',
       'accent': '#818181',
-      'lightAccent': '#D9D9D9'
+      'lightAccent': '#f2f2f2'
     }
   },
   plugins: [],
