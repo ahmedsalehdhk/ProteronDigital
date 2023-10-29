@@ -6,12 +6,10 @@ import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
 import ImageSlider from "../components/ImageSlider";
 
-import img1 from '../assets/home-carousal/home-carousal-image-1.png'
-import img2 from '../assets/home-carousal/home-caoursal-image-2.png'
-import img3 from '../assets/home-carousal/home-carousal-image-1.png'
-const images = [
-  img1, img2, img3
-];
+import img1 from "../assets/home-carousal/home-carousal-image-1.png";
+import img2 from "../assets/home-carousal/home-caoursal-image-2.png";
+import img3 from "../assets/home-carousal/home-carousal-image-1.png";
+const images = [img1, img2, img3];
 
 export default function Home() {
   const location = useLocation();
@@ -139,7 +137,7 @@ export default function Home() {
       </div>
 
       {/* CONTACT */}
-      <div className="contact px-6 md:px-8 xl:px-48 pt-32 pb-16" id="contact">
+      <div className="contact px-6 md:px-8 xl:px-48 pt-32 pb-32" id="contact">
         <div className="contact-text flex flex-col md:flex-row mb-10">
           <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3 md:w-1/2">
             Love to hear from you,
@@ -147,8 +145,53 @@ export default function Home() {
           </h2>
           <p className="text-accent md:mb-10 md:w-1/2">Whether it be an inquiry or a something something, we would love for you to get in touch with us. info@proterondigital.com</p>
         </div>
-        <div className="contact-form bg-dark text-light flex justify-center items-center h-96">
-          <h1>FORM GOES HERE</h1>
+        <div className="contact-form flex justify-center items-center">
+          {/* FORM */}
+          <form action="" className="w-full">
+            <div className="row-1 flex flex-col lg:flex-row gap-5 mb-5 w-full">
+              <div className="name flex flex-col w-full">
+                <label htmlFor="">Your Name</label>
+                <input type="text" placeholder="John Doe" />
+              </div>
+              <div className="mail flex flex-col w-full">
+                <label htmlFor="">Your Email</label>
+                <input type="email" placeholder="john@example.com" />
+              </div>
+            </div>
+            <div className="row-2 flex flex-col lg:flex-row gap-5 mb-5 w-full">
+              <div className="name flex flex-col w-full">
+                <label htmlFor="">Platform</label>
+                <select name="" id="">
+                  <option value="nada" selected disabled>-</option>
+                  <option value="nada">Desktop</option>
+                  <option value="nada">Mobile</option>
+                  <option value="nada">Both</option>
+                </select>
+              </div>
+              <div className="mail flex flex-col w-full">
+                <label htmlFor="">Category</label>
+                <select name="" id="">
+                  <option value="nada" selected disabled>-</option>
+                  <option value="nada">Custom Software Development</option>
+                  <option value="nada">Web Application Development</option>
+                  <option value="nada">Mobile App Development</option>
+                  <option value="nada">E-commerce Solutions</option>
+                  <option value="nada">UI/UX Design</option>
+                  <option value="nada">Database Management</option>
+                  <option value="nada">Blockchain Solutions</option>
+                  <option value="nada">API Development</option>
+                  <option value="nada">Data Analytics and Business Intelligence</option>
+                </select>
+              </div>
+            </div>
+            <div className="row-3 flex flex-col mb-5">
+              <label htmlFor="">Message</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Let us know about your project"></textarea>
+            </div>
+            <div className="submitbtn flex justify-end">
+              <ButtonDark text="send" />
+            </div>
+          </form>
         </div>
       </div>
     </div>

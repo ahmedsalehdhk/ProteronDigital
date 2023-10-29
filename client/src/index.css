@@ -9,3 +9,26 @@ html{
     scroll-behavior: smooth;
 }
 
+label{
+    font-weight: 500;
+}
+
+input{
+    padding: 10px;
+    background-color: #F2F2F2;
+    outline: none;
+}
+
+textarea{
+    padding: 10px;
+    background-color: #F2F2F2;
+    outline: none;
+    resize: none;
+}
+
+select {
+    padding: 10px;
+    background-color: #F2F2F2;
+    outline: none;
+}
+
