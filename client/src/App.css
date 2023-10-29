@@ -109,3 +109,12 @@
   background-position: center;
   background-size: cover;
 }
+
+/* FOOTER */
+
+#logo-light{
+  background-image: url("./assets/logo/proteron-logo-black.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

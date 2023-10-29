@@ -40,7 +40,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="home-carousal h-[0] grow overflow-hidden bg-light-green-700">
+        <div className="home-carousal h-[0] w-screen bg-green-50 grow overflow-hidden">
           <ImageSlider images={images} />
         </div>
       </div>
@@ -194,6 +194,7 @@ export default function Home() {
           </form>
         </div>
       </div>
+
     </div>
   );
 }
