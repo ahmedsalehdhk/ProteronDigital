@@ -25,16 +25,16 @@ export default function Footer() {
         </div>
         <div className="col-2 md:w-1/5 mb-3">
           <h3>Company</h3>
-          <p className="capitalize text-accent hover:text-white"><Link to='/' onClick={() => handleSroll('about')}>about</Link></p>
-          <p className="capitalize text-accent hover:text-white"><Link to='/career'>career</Link></p>
-          <p className="capitalize text-accent hover:text-white"><Link to='/'  onClick={() => handleSroll('case-study')}>case studies</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link to='/' onClick={() => handleSroll('about')}>about</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link to='/career'>career</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link to='/'  onClick={() => handleSroll('case-study')}>case studies</Link></p>
         </div>
         <div className="col-3 md:w-1/5">
           <h3>Social</h3>
-          <p className="capitalize text-accent hover:text-white"><Link onClick={() => redirectURL('www.facebook.com')}>facebook</Link></p>
-          <p className="capitalize text-accent hover:text-white"><Link>instagram</Link></p>
-          <p className="capitalize text-accent hover:text-white"><Link>linkedIn</Link></p>
-          <p className="capitalize text-accent hover:text-white"><Link>behance</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link onClick={() => redirectURL('www.facebook.com')}>facebook</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link>instagram</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link>linkedIn</Link></p>
+          <p className="capitalize w-fit text-accent hover:text-white"><Link>behance</Link></p>
         </div>
       </div>
       <hr className="border-accent"/>
