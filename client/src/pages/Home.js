@@ -16,7 +16,7 @@ export default function Home() {
     }
   };
 
-  //JSX starts here
+  
   return (
     <div className="home-page">
       {/* HOME */}
@@ -35,9 +35,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="home-carousal h-[0] w-screen grow bg-red-300">
-
-        </div>
+        <div className="home-carousal h-[0] w-screen grow bg-green-300"></div>
       </div>
 
       {/* ABOUT SECTION */}
@@ -160,9 +158,9 @@ export default function Home() {
                   <option value="" selected disabled>
                     -
                   </option>
-                  <option value="nada">Desktop</option>
-                  <option value="nada">Mobile</option>
-                  <option value="nada">Both</option>
+                  <option value="desktop">Desktop</option>
+                  <option value="mobile">Mobile</option>
+                  <option value="both">Both</option>
                 </select>
               </div>
               <div className="mail flex flex-col w-full">
@@ -171,15 +169,15 @@ export default function Home() {
                   <option value="" selected disabled>
                     -
                   </option>
-                  <option value="nada">Custom Software Development</option>
-                  <option value="nada">Web Application Development</option>
-                  <option value="nada">Mobile App Development</option>
-                  <option value="nada">E-commerce Solutions</option>
-                  <option value="nada">UI/UX Design</option>
-                  <option value="nada">Database Management</option>
-                  <option value="nada">Blockchain Solutions</option>
-                  <option value="nada">API Development</option>
-                  <option value="nada">Data Analytics and Business Intelligence</option>
+                  <option value="csd">Custom Software Development</option>
+                  <option value="wad">Web Application Development</option>
+                  <option value="mad">Mobile App Development</option>
+                  <option value="ecs">E-commerce Solutions</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="dm">Database Management</option>
+                  <option value="bs">Blockchain Solutions</option>
+                  <option value="apid">API Development</option>
+                  <option value="dabi">Data Analytics and Business Intelligence</option>
                 </select>
               </div>
             </div>

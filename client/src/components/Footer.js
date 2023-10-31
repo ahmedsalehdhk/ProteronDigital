@@ -43,7 +43,7 @@ export default function Footer() {
           <p className="text-accent">2023</p>
         </div>
         <div className="col-2">
-          <p className="text-accent">Copyright @ Proteron Digital</p>
+          <p className="text-accent">© 2023 Proteron Digital</p>
         </div>
         <div className="col-3">
           <p className="text-accent hover:text-white"><Link>Terms and Services</Link></p>
