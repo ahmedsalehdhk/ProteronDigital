@@ -1,34 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-label{
-    font-weight: 500;
+label {
+  font-weight: 500;
 }
 
-input{
-    padding: 10px;
-    background-color: #F2F2F2;
-    outline: none;
+input {
+  padding: 10px;
+  background-color: #f2f2f2;
+  outline: none;
 }
 
-textarea{
-    padding: 10px;
-    background-color: #F2F2F2;
-    outline: none;
-    resize: none;
+textarea {
+  padding: 10px;
+  background-color: #f2f2f2;
+  outline: none;
+  resize: none;
 }
 
 select {
-    padding: 10px;
-    background-color: #F2F2F2;
-    outline: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  outline: none;
 }
 
+/* SCROLLBAR CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

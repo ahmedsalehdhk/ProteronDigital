@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 //components
 import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
+import CarouselCustomNavigation from "../components/CarouselCustomNavigation";
 
 // Home
 export default function Home() {
@@ -16,7 +17,6 @@ export default function Home() {
     }
   };
 
-  
   return (
     <div className="home-page">
       {/* HOME */}
@@ -35,7 +35,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="home-carousal h-[0] w-screen grow bg-green-300"></div>
+        <div className="home-carousal h-[0] w-[96%] grow m-auto">
+          <CarouselCustomNavigation/>
+        </div>
       </div>
 
       {/* ABOUT SECTION */}
@@ -44,7 +46,9 @@ export default function Home() {
         <h2 className="text-center capitalize font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl mb-10">better products for faster business</h2>
         <div className="about-cards flex flex-col md:flex-row justify-between lg:justify-center gap-3">
           <div className="about-card-large bg-lightAccent text-dark md:w-1/2 lg:max-w-xl">
-            <div className="about-card-large-image h-56 md:h-64" id="about-large-card"></div>
+            <div className="image-wrapper overflow-hidden">
+              <div className="about-card-large-image h-56 md:h-64 hover:scale-110 transition-all" id="about-large-card"></div>
+            </div>
             <div className="about-card-large-text py-8 px-5">
               <h3 className="mb-3 text-xl">Integrity</h3>
               <p>
@@ -59,14 +63,18 @@ export default function Home() {
                 <h3 className="mb-3 text-xl">Precision</h3>
                 <p>With a steadfast focus on quality craftsmanship and a flair for creativity, we embark on each project with sincerity and meticulous attention to detail.</p>
               </div>
-              <div className="about-small-card-image md:w-1/2 order-1 md:order-2 h-56 md:h-auto" id="about-small-card-1"></div>
+              <div className="image-wrapper md:w-1/2 order-1 md:order-2 h-56 md:h-auto overflow-hidden">
+                <div className="about-small-card-image h-full w-full hover:scale-110 transition-all" id="about-small-card-1"></div>
+              </div>
             </div>
             <div className="about-small-card flex flex-col md:flex-row bg-lightAccent text-dark h-1/2 lg:max-w-xl">
               <div className="about-small-card-text py-8 px-5 md:w-1/2 order-2 md:order-1">
                 <h3 className="mb-3 text-xl">Client-oriented</h3>
                 <p>At Proteron Digital, we believe in fostering enduring relationships with our clients, characterized by trust, collaboration, and shared success.</p>
               </div>
-              <div className="about-small-card-image md:w-1/2 order-1 md:order-2 h-56 md:h-auto" id="about-small-card-2"></div>
+              <div className="image-wrapper md:w-1/2 order-1 md:order-2 h-56 md:h-auto overflow-hidden">
+                <div className="about-small-card-image h-full w-full hover:scale-110 transition-all" id="about-small-card-2"></div>
+              </div>
             </div>
           </div>
         </div>
