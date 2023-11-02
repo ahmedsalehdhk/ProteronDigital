@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-carousal h-[0] w-[96%] grow m-auto">
-          <CarouselCustomNavigation/>
+          <CarouselCustomNavigation />
         </div>
       </div>
 
@@ -126,12 +126,20 @@ export default function Home() {
           </p>
         </div>
         <div className="case-study-cards flex flex-col md:flex-row gap-3">
-          <div className="case-study-card col-1 h-56 md:h-auto w-auto md:w-1/2 bg-dark text-light rounded-md">1</div>
+          <Link to="/project-drishti" className="col-1 h-56 md:h-auto w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
+            <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+          </Link>
           <div className="col-2 md:w-1/2 flex flex-col gap-3">
-            <div className="case-study-card row-1 h-56 w-auto bg-dark text-light rounded-md">2</div>
+            <Link to="/project-homsia" className="row-1 h-56 w-auto bg-dark text-light rounded-md overflow-hidden">
+              <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+            </Link>
             <div className="row-2 flex flex-col md:flex-row gap-3">
-              <div className="case-study-card col-1 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md">3</div>
-              <div className="case-study-card col-2 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md">4</div>
+              <Link to="/project-teamflow" className="case-study-card col-1 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
+                <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+              </Link>
+              <Link to="/project-something" className="case-study-card col-2 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
+                <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+              </Link>
             </div>
           </div>
         </div>
