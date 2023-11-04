@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
 import CarouselCustomNavigation from "../components/CarouselCustomNavigation";
+import Carousel from "../components/Carousel";
 
 // Home
 export default function Home() {
@@ -86,7 +87,11 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3">offered services</h2>
           <p className="text-accent mb-10">Explore our services: captivating websites, tailor-made software, and more. Elevate your business with our digital expertise.</p>
         </div>
-        <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
+        <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 bg-red-500 overflow-x-scroll">
+          <Carousel />
+        </div>
+        
+        {/* <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
           <Link to="/customsoftware">
             <Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" />
           </Link>
@@ -114,7 +119,7 @@ export default function Home() {
           <Link to={"/dataanalytics"}>
             <Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* CASE STUDY */}
