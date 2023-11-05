@@ -2,10 +2,9 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 //components
-import Card from "../components/Card";
 import ButtonDark from "../components/ButtonDark";
-import CarouselCustomNavigation from "../components/CarouselCustomNavigation";
-import Carousel from "../components/Carousel";
+import HomeCarousel from "../components/HomeCarousel";
+import ServiceCard from "../components/ServiceCard";
 
 // Home
 export default function Home() {
@@ -37,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-carousal h-[0] w-[96%] grow m-auto">
-          <CarouselCustomNavigation />
+          <HomeCarousel />
         </div>
       </div>
 
@@ -87,39 +86,35 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3">offered services</h2>
           <p className="text-accent mb-10">Explore our services: captivating websites, tailor-made software, and more. Elevate your business with our digital expertise.</p>
         </div>
-        <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 bg-red-500 overflow-x-scroll">
-          <Carousel />
-        </div>
-        
-        {/* <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
+        <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
           <Link to="/customsoftware">
-            <Card id="CSD" title="Custom Software Development" description="Creating bespoke software solutions tailored to specific business needs" />
+            <ServiceCard title="Custom Software Development" content="Creating bespoke software solutions tailored to specific business needs" />
           </Link>
-          <Link to={"/webapplication"}>
-            <Card id="WAD" title="Web Application Development" description="Building dynamic and interactive web applications for various purposes" />
+          <Link to="/webapplication">
+            <ServiceCard title="Web Application Development" content="Building dynamic and interactive web applications for various purposes" />
           </Link>
-          <Link to={"/mobileapplication"}>
-            <Card id="MAD" title="Mobile App Development" description="Designing and developing applications for smartphones and tablets across platforms" />
+          <Link to="/mobileapplication">
+            <ServiceCard title="Mobile App Development" content="Designing and developing applications for smartphones and tablets across platforms" />
           </Link>
-          <Link to={"/ecommercesolution"}>
-            <Card id="ECS" title="E-commerce Solutions" description="Developing online platforms for businesses to sell products or services" />
+          <Link to="/ecommercesolution">
+            <ServiceCard title="E-commerce Solutions" content="Developing online platforms for businesses to sell products or services" />
           </Link>
-          <Link to={"/uiux"}>
-            <Card id="UIX" title="UI/UX Design" description="Crafting user interfaces and experiences that are intuitive and visually appealing" />
+          <Link to="/uiux">
+            <ServiceCard title="UI/UX Design" content="Crafting user interfaces and experiences that are intuitive and visually appealing" />
           </Link>
-          <Link to={"/databasemanagement"}>
-            <Card id="DM" title="Database Management" description="Creating and managing databases to store and organize data efficiently" />
+          <Link to="/databasemanagement">
+            <ServiceCard title="Database Management" content="Creating and managing databases to store and organize data efficiently" />
           </Link>
-          <Link to={"/blockchainsolution"}>
-            <Card id="BS" title="Blockchain Solutions" description="Developing applications based on blockchain technology for various industries" />
+          <Link to="/blockchainsolution">
+            <ServiceCard title="Blockchain Solutions" content="Developing applications based on blockchain technology for various industries" />
           </Link>
-          <Link to={"/APIdevelopment"}>
-            <Card id="APID" title="API Development" description="Creating APIs to enable interactions between software components" />
+          <Link to="/APIdevelopment">
+            <ServiceCard title="API Development" content="Creating APIs to enable interactions between software components" />
           </Link>
-          <Link to={"/dataanalytics"}>
-            <Card id="DABI" title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />
+          <Link to="/dataanalytics">
+            <ServiceCard title="Data Analytics and Business Intelligence" content="Providing tools to analyze and visualize data for informed decision-making" />
           </Link>
-        </div> */}
+        </div>
       </div>
 
       {/* CASE STUDY */}
@@ -132,18 +127,18 @@ export default function Home() {
         </div>
         <div className="case-study-cards flex flex-col md:flex-row gap-3">
           <Link to="/project-drishti" className="col-1 h-56 md:h-auto w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
-            <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+            <div className="case-study-card h-full w-full bg-cover bg-center hover:scale-110 transition-all"></div>
           </Link>
           <div className="col-2 md:w-1/2 flex flex-col gap-3">
             <Link to="/project-homsia" className="row-1 h-56 w-auto bg-dark text-light rounded-md overflow-hidden">
-              <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+              <div className="case-study-card h-full w-full bg-cover bg-center hover:scale-110 transition-all"></div>
             </Link>
             <div className="row-2 flex flex-col md:flex-row gap-3">
               <Link to="/project-teamflow" className="case-study-card col-1 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
-                <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+                <div className="case-study-card h-full w-full bg-cover bg-center hover:scale-110 transition-all"></div>
               </Link>
               <Link to="/project-something" className="case-study-card col-2 h-56 w-auto md:w-1/2 bg-dark text-light rounded-md overflow-hidden">
-                <div className="case-study-card h-full w-full hover:scale-110 transition-all"></div>
+                <div className="case-study-card h-full w-full bg-cover bg-center hover:scale-110 transition-all"></div>
               </Link>
             </div>
           </div>

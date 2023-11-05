@@ -11,10 +11,10 @@ export default function Career() {
         </p>
       </div>
       <div className="career-cards flex flex-col gap-3">
-        <JobCards location='Dhaka, Bangladesh' days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
-        <JobCards location='Dhaka, Bangladesh' days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
-        <JobCards location='Dhaka, Bangladesh' days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
-        <JobCards location='Dhaka, Bangladesh' days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
+        <JobCards location="Dhaka, Bangladesh" days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
+        <JobCards location="Dhaka, Bangladesh" days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
+        <JobCards location="Dhaka, Bangladesh" days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
+        <JobCards location="Dhaka, Bangladesh" days="Sun-Thu" hours="10AM-5PM" salary="40K BDT" />
       </div>
     </div>
   );

@@ -33,6 +33,7 @@ select {
 }
 
 /* SCROLLBAR CSS */
+
 ::-webkit-scrollbar {
   width: 10px;
 }

@@ -20,7 +20,7 @@ export default function Footer() {
     <div className="footer px-6 md:px-8 lg:px-32 pt-24 pb-8 bg-dark text-light">
       <div className="footer-upper flex flex-col md:flex-row mb-10">
         <div className="col-1 md:w-3/5">
-          <Link to={'/'}><div className="h-12 w-32 mb-3" id="logo-light"></div></Link>
+          <Link to={'/'}><div className="h-12 w-32 mb-3 bg-center bg-cover bg-no-repeat" id="logo-light"></div></Link>
           <p className="text-accent mb-3">Creating your digital presence.</p>
         </div>
         <div className="col-2 md:w-1/5 mb-3">

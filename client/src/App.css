@@ -1,121 +1,35 @@
-
 /* NAVBAR */
+
 #logo {
   background-image: url("./assets/logo/proteron-logo-black.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-/* HOME */
-
 /* ABOUT */
-#about-large-card {
-  background-image: url("https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1600");
+
+.about-cards div {
   background-size: cover;
   background-position: center;
+}
+#about-large-card {
+  background-image: url("https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1600");
 }
 
 #about-small-card-1 {
   background-image: url("https://images.pexels.com/photos/924676/pexels-photo-924676.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-size: cover;
-  background-position: center;
 }
 
 #about-small-card-2 {
   background-image: url("https://images.pexels.com/photos/3277806/pexels-photo-3277806.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-size: cover;
-  background-position: center;
-}
-
-/* SERVICES */
-
-#CSD {
-  background-image: url("./assets/service-card-images/custom-software-development.jpg");
-  background-size: cover;
-}
-#CSD:hover {
-  scale: 1.1;
-}
-
-#WAD {
-  background-image: url("./assets/service-card-images/web-app-development.jpeg");
-  background-size: cover;
-}
-#WAD:hover {
-  scale: 1.1;
-}
-
-#MAD {
-  background-image: url("./assets/service-card-images/mobile-app-development.jpg");
-  background-size: cover;
-}
-#MAD:hover {
-  scale: 1.1;
-}
-
-#ECS {
-  background-image: url("./assets/service-card-images/ecommerce-solutions.jpg");
-  background-size: cover;
-}
-#ECS:hover {
-  scale: 1.1;
-}
-
-#UIX {
-  background-image: url("./assets/service-card-images/ui-ux-design.jpg");
-  background-size: cover;
-}
-#UIX:hover {
-  scale: 1.1;
-}
-
-#DM {
-  background-image: url("./assets/service-card-images/database-management.jpg");
-  background-size: cover;
-}
-#DM:hover {
-  scale: 1.1;
-}
-
-#BS {
-  background-image: url("./assets/service-card-images/blockchain-solutions.jpg");
-  background-size: cover;
-}
-#BS:hover {
-  scale: 1.1;
-}
-
-#APID {
-  background-image: url("./assets/service-card-images/api-development.jpg");
-  background-size: cover;
-}
-#APID:hover {
-  scale: 1.1;
-}
-
-#DABI {
-  background-image: url("./assets/service-card-images/data-analytics.jpg");
-  background-size: cover;
-}
-#DABI:hover {
-  scale: 1.1;
 }
 
 /* CASE STUDY */
 
 .case-study-card {
   background-image: url("https://images.pexels.com/photos/16642986/pexels-photo-16642986/free-photo-of-embracing-the-love-of-apple-gadgets-a-journey-with-the-iphone.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-position: center;
-  background-size: cover;
 }
 
 /* FOOTER */
 
-#logo-light{
+#logo-light {
   background-image: url("./assets/logo/proteron-logo-white.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-
