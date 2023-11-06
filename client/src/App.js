@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/databasemanagement" element={<Service title="Database Management" content="Creating and managing databases to store and organize data efficiently" />}></Route>
           <Route exact path="/blockchainsolution" element={<Service title="Blockchain Solutions" content="Developing applications based on blockchain technology for various industries" />}></Route>
           <Route exact path="/APIdevelopment" element={<Service title="API Development" content="Creating APIs to enable interactions between software components" />}></Route>
-          <Route exact path="/dataanalytics" element={<Service title="Data Analytics and Business Intelligence" description="Providing tools to analyze and visualize data for informed decision-making" />}></Route>
+          <Route exact path="/dataanalytics" element={<Service title="Data Analytics and Business Intelligence" content="Providing tools to analyze and visualize data for informed decision-making" />}></Route>
           {/* CASE STUDY ROUTES */}
           <Route exact path="/project-drishti" element={<CaseStudy title="Drishti" content="Drishti is an app for the visually impaired people that helps them to scan and identify daily objects and many more."></CaseStudy>}></Route>
           <Route exact path="/project-homsia" element={<CaseStudy title="Homsia" content="Homsia is a real estate company, we have developed a website for most recently."></CaseStudy>}></Route>

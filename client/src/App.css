@@ -22,6 +22,35 @@
   background-image: url("https://images.pexels.com/photos/3277806/pexels-photo-3277806.jpeg?auto=compress&cs=tinysrgb&w=1600");
 }
 
+/* SERVICES */
+#customsoftware {
+  background-image: url("./assets/service-cards/custom-software-development.jpg");
+}
+#webapplication {
+  background-image: url("./assets/service-cards/web-app-development.jpeg");
+}
+#mobileapplication {
+  background-image: url("./assets/service-cards/mobile-app-development.jpg");
+}
+#ecommercesolution {
+  background-image: url("./assets/service-cards/ecommerce-solutions.jpg");
+}
+#uiux {
+  background-image: url("./assets/service-cards/ui-ux-design.jpg");
+}
+#databasemanagement {
+  background-image: url("./assets/service-cards/database-management.jpg");
+}
+#blockchainsolution {
+  background-image: url("./assets/service-cards/blockchain-solutions.jpg");
+}
+#APIdevelopment {
+  background-image: url("./assets/service-cards/api-development.jpg");
+}
+#dataanalytics {
+  background-image: url("./assets/service-cards/data-analytics.jpg");
+}
+
 /* CASE STUDY */
 
 .case-study-card {

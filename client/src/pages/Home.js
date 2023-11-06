@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 //components
 import ButtonDark from "../components/ButtonDark";
 import HomeCarousel from "../components/HomeCarousel";
-import ServiceCard from "../components/ServiceCard";
+import ServicesCarousel from "../components/ServicesCarousel";
 
 // Home
 export default function Home() {
@@ -86,34 +86,8 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize mb-3">offered services</h2>
           <p className="text-accent mb-10">Explore our services: captivating websites, tailor-made software, and more. Elevate your business with our digital expertise.</p>
         </div>
-        <div className="services-carousal ml-6 md:ml-8 lg:ml-32 flex gap-3 overflow-x-scroll">
-          <Link to="/customsoftware">
-            <ServiceCard title="Custom Software Development" content="Creating bespoke software solutions tailored to specific business needs" />
-          </Link>
-          <Link to="/webapplication">
-            <ServiceCard title="Web Application Development" content="Building dynamic and interactive web applications for various purposes" />
-          </Link>
-          <Link to="/mobileapplication">
-            <ServiceCard title="Mobile App Development" content="Designing and developing applications for smartphones and tablets across platforms" />
-          </Link>
-          <Link to="/ecommercesolution">
-            <ServiceCard title="E-commerce Solutions" content="Developing online platforms for businesses to sell products or services" />
-          </Link>
-          <Link to="/uiux">
-            <ServiceCard title="UI/UX Design" content="Crafting user interfaces and experiences that are intuitive and visually appealing" />
-          </Link>
-          <Link to="/databasemanagement">
-            <ServiceCard title="Database Management" content="Creating and managing databases to store and organize data efficiently" />
-          </Link>
-          <Link to="/blockchainsolution">
-            <ServiceCard title="Blockchain Solutions" content="Developing applications based on blockchain technology for various industries" />
-          </Link>
-          <Link to="/APIdevelopment">
-            <ServiceCard title="API Development" content="Creating APIs to enable interactions between software components" />
-          </Link>
-          <Link to="/dataanalytics">
-            <ServiceCard title="Data Analytics and Business Intelligence" content="Providing tools to analyze and visualize data for informed decision-making" />
-          </Link>
+        <div className="services-carousal ml-6 md:ml-8 lg:ml-32">
+          <ServicesCarousel />
         </div>
       </div>
 
