@@ -1,5 +1,9 @@
 import { Carousel } from "@material-tailwind/react";
 
+import bg1 from "../assets/svg/bg1.svg"
+import bg2 from "../assets/svg/bg2.svg"
+import bg3 from "../assets/svg/bg3.svg"
+
 export default function HomeCarousel() {
   return (
     <Carousel
@@ -12,9 +16,9 @@ export default function HomeCarousel() {
         </div>
       )}
     >
-      <img src="https://images.pexels.com/photos/1029624/pexels-photo-1029624.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="1" className="h-full w-full object-cover" />
-      <img src="https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="h-full w-full object-cover" />
-      <img src="https://images.pexels.com/photos/10874566/pexels-photo-10874566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="h-full w-full object-cover" />
+      <img src={bg1} alt="1" className="h-full w-full object-cover"/>
+      <img src={bg2} alt="1" className="h-full w-full object-cover"/>
+      <img src={bg3} alt="1" className="h-full w-full object-cover"/>
     </Carousel>
   );
 }

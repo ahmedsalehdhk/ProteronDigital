@@ -9,7 +9,7 @@ export default function ServiceCard(props) {
       </div>
       <div className="card-text py-5 px-3">
         <Link to={props.id}>
-          <h3 className="font-medium capitalize mb-3 hover:underline">{props.title}</h3>
+          <h3 className="font-medium capitalize mb-3 hover:text-blue-800">{props.title}</h3>
         </Link>
         <p className="text-accent">{props.content}</p>
       </div>
